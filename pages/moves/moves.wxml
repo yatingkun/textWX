@@ -1,0 +1,10 @@
+<import src="movelist/movelist-template"/>
+<view>
+<block wx:for="{{moveListArray}}" wx:for-item="moveList" wx:key="index">
+
+<template is="movelist-template" data="{{moveList}}"></template>
+
+</block>
+<!--<template is="movelist-template" data=""></template>
+<template is="movelist-template"></template>-->
+</view>

@@ -1,0 +1,51 @@
+<import src="../starts/start-template" />
+<view class='detail-contain'>
+  <view class='head'>
+    <image src='{{detailData.imageUrl}}'></image>
+    <text class='move-title'>{{detailData.title}}</text>
+    <text class="country-year">{{detailData.country}}·{{detailData.year}}</text>
+    <view class='count'>
+      <text class='num'>{{detailData.like_count}}</text>
+      <text class='like_count'>人喜欢</text>
+      <text class='num'>{{detailData.reviews_count}}</text>
+      <text>条评论</text>
+      <image src='{{detailData.imageUrl}}'></image>
+    </view>
+  </view>
+  <view class='detail'>
+    <text>{{detailData.title}}</text>
+    <view class='detail-score'>
+      评分
+      <template is="start-template" data="{{startScore:detailData.startScore,score:detailData.score}}"></template>
+
+    </view>
+    <view>导演
+      <text>{{detailData.director}}</text>
+    </view>
+    <view>影人
+      <text>{{detailData.castsName}}</text>
+    </view>
+    <view>类型
+      <text>{{detailData.genres}}</text>
+    </view>
+  </view>
+  <view class='empty'></view>
+  <view class='summary'>
+    <text>剧情简介</text>
+    <text>{{detailData.summary}}</text>
+  </view>
+  <view class='empty'></view>
+  <view class='casts'>
+    <text>影人</text>
+    <scroll-view scroll-x>
+      <view class='casts-container'>
+        <block wx:for="{{detailData.casts}}" wx:for-item="item" wx:key="index">
+          <view class='cast'>
+            <image src='{{item.avatars.large}}'></image>
+            <text class='cast-name'>{{item.name}}</text>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>

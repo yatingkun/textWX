@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="head">
+    <image src="{{play?detail.headImgSrc:detail.music.coverImg}}" class="news-picture"></image>
+    <image src="{{play?'/images/music/music-start.png':'/images/music/music-stop.png'}}" class="music" catchtap='musicPlay'></image>
+  </view>
+  <view class="author">
+    <image src="{{detail.avatar}}" class="avatar"></image>
+    <text class="author-name">{{detail.author}}</text>
+    <text>发表于</text>
+    <text class="date">{{detail.dateTime}}</text>
+  </view>
+  <view class="title">{{detail.title}}</view>
+  <view>
+    <image src="/images/icon/share.png" class="share" catchtap="shareAction"></image>
+    <image wx:if="{{collection}}" src="/images/icon/collection.png" class="collection" catchtap="changeState"></image>
+    <image wx:else src="/images/icon/collection-anti.png" class="collection" catchtap="changeState"></image>
+    <view class="dashed"></view>
+  </view>
+  <text class="detail">{{detail.detail}}</text>
+</view>

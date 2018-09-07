@@ -1,0 +1,10 @@
+@import "../movelist/movelist-template.wxss";
+.fonter:last-child{
+  height: 0rpx;
+}
+.head{
+  display: none;
+}
+.more-container{
+  padding: 30rpx 0;
+}

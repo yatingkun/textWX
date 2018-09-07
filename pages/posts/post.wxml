@@ -1,0 +1,11 @@
+<import src="../../view-model/view-model"/>
+<swiper catchtap='swiperDetail' class="swiper" indicator-dots="true" indicator-color="rgba(255, 251, 240，.9)" indicator-active-color="#2A45FF" autoplay="true" interval="2000">
+	<swiper-item><image src="/images/vr.png" data-postid="3"></image></swiper-item>
+	<swiper-item><image src="/images/wx.png" data-postid="4"></image></swiper-item>
+	<swiper-item><image src="/images/iqiyi.png" data-postid="5"></image></swiper-item>
+</swiper>
+<block wx:for="{{state}}" wx:key="index">
+<view catchtap='detail' data-postid="{{index}}">
+<template is="view-model" data="{{...item}}"/>
+</view>
+</block>

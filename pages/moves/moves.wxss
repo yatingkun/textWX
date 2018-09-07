@@ -1,0 +1,4 @@
+@import "movelist/movelist-template.wxss";
+.fonter:last-child{
+  height: 0rpx;
+}

@@ -1,0 +1,16 @@
+.start-container{
+  display: flex;
+  margin: 20rpx 0rpx;
+}
+.start-container image{
+  display: flex;
+  width: 17rpx;
+  height: 17rpx;
+  margin-right:5rpx;
+}
+.start-score{
+  margin-left: 15rpx;
+  font-size: 20rpx;
+  opacity: 0.5;
+  line-height: 17rpx;
+}

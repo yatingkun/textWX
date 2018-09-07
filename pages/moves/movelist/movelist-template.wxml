@@ -1,0 +1,20 @@
+<import src="../moveitem/item-template" />
+<template name="movelist-template">
+  <view class="head">
+    <text class="statu">{{moveList.movesStatu}}</text>
+    <view class="show-more"  data-statu="{{moveList.movesStatu}}"catchtap='showMore'>
+      <text>更多</text>
+      <image src="/images/icon/arrow-right.png"></image>
+    </view>
+  </view>
+  <view class="move-list">
+    <block wx:for="{{moveList.moveList}}" wx:for-item="move" wx:key="index" >
+      <template is="item-template" data="{{...move}}"></template>
+    </block>
+    <view class='left-align'></view>
+    <view class='left-align'></view>
+    <view class='left-align'></view> 
+  </view>
+<view class='fonter'></view>
+</template>
+

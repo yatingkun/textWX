@@ -1,0 +1,14 @@
+@import "../starts/start-template.wxss";
+ .item-container{
+   display: flex;
+   flex-direction: column;
+ }
+ .item-image{
+   width: 220rpx;
+   height: 320rpx;
+ }
+ .item-title{
+   margin-top: 20rpx;
+   font-size:25rpx;
+   opacity: 0.5;
+ }

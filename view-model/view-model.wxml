@@ -1,0 +1,20 @@
+<template name="view-model">
+<view class="news-container"> 
+  <view class="visitor">
+    <view><image src='{{avatar}}' class='avatar'></image></view>
+    <text class='date'>{{date}}</text>
+  </view>
+  <view>
+    <image src='{{newspicture}}'class='news-picture'></image>
+  </view>
+  <view class='text'>
+    <text>{{text}}</text>
+  </view>
+  <view class='state-nav'>
+    <view><image src="/images/icon/chat.png" class='foucs-counter'></image></view>
+    <text>{{collection}}</text>
+    <view><image src="/images/icon/view.png" class='viewer-counter'></image></view>
+    <text>{{reading}}</text>
+  </view>
+</view>
+</template>

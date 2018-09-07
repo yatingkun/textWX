@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-picture {
+  width: 100%;
+}
+
+.author {
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  line-height: 60rpx;
+  margin: 20rpx 0 0 20rpx;
+}
+
+.avatar {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.author text {
+  font-size: 25rpx;
+}
+
+.author-name {
+  margin-left: 5rpx;
+  margin-right: 10rpx;
+}
+
+.date {
+  margin-left: 10rpx;
+}
+
+.title {
+  margin: 30rpx 0 30rpx 20rpx;
+}
+
+.share {
+  width: 60rpx;
+  height: 60rpx;
+  float: right;
+  margin-right: 10rpx;
+}
+
+.collection {
+  width: 60rpx;
+  height: 60rpx;
+  float: right;
+  margin-right: 20rpx;
+}
+
+.dashed {
+  width: 92%;
+  height: 2px;
+  background-color: #e4e4e4;
+  z-index: -1;
+  margin-top: 28rpx;
+}
+
+.detail {
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  font-weight: 200;
+  letter-spacing: 2rpx;
+  margin-bottom: 20rpx;
+}
+.head{
+  position: relative;
+}
+.music{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  right: 40%;
+  bottom: 40%;
+}

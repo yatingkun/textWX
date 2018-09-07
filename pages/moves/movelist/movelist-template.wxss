@@ -1,0 +1,43 @@
+@import "../moveitem/item-template.wxss";
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25rpx;
+  opacity: 0.5;
+  margin: 30rpx 0;
+}
+
+.head image {
+  height: 15rpx;
+  width: 15rpx;
+  margin-right: 18rpx;
+  line-height: 15rpx;
+}
+
+.statu {
+  margin-left: 15rpx;
+}
+
+.show-more text {
+  margin-right: 15rpx;
+  color: blue;
+}
+
+.move-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0rpx 15rpx;
+}
+.fonter{
+  width: 100%;
+  height: 40rpx;
+  background-color: gray;
+  opacity: 0.2;
+}
+.left-align{
+   height: 0rpx;
+   width: 220rpx;
+}
+  

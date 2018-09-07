@@ -1,0 +1,130 @@
+@import "../starts/start-template.wxss";
+.detail-contain{
+  display: flex;
+  flex-direction: column;
+}
+.head{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 300rpx;
+  justify-content: space-around;
+  position: relative;
+}
+.head>image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  filter:  blur(4px);
+}
+.move-title{
+  color: white;
+  font-size: 35rpx;
+  letter-spacing: 5rpx;
+  margin-left:30rpx;
+}
+.country-year{
+  color: white;
+  font-size: 25rpx;
+  letter-spacing: 5rpx;
+  margin-left:30rpx;
+}
+.count{
+  font-size: 20rpx;
+  margin-left:30rpx;
+  color:#7F646A;
+}
+.count>.num{
+  color: red;
+  margin-right: 10rpx;
+}
+.count>.like_count{
+  margin-right: 20rpx;
+}
+.count>image{
+  width: 180rpx;
+  height: 250rpx;
+  background-color:blueviolet;
+  position: absolute;
+  bottom:-80rpx;
+  right: 30rpx;
+}
+.detail{
+  font-size: 25rpx;
+  margin-top:75rpx;
+  padding-left: 30rpx;
+  color: #7F646A;
+  
+}
+
+.detail>view{
+  margin-top:10rpx;
+  opacity: 0.6;
+}
+.detail>view>text{
+  margin-left: 25rpx;
+}
+.detail-score{
+  display: flex;
+}
+.detail>text{
+  display: block;
+  margin-bottom:30rpx;
+}
+.detail>view:last-child{
+  margin-bottom: 40rpx;
+}
+.summary{
+  display: flex;
+  flex-direction: column;
+  padding:0rpx 30rpx;
+  font-size: 25rpx;
+  color:#7F646A;
+}
+.summary>text{
+  margin-top:40rpx;
+}
+.summary>text:last-child{
+  opacity: 0.6;
+  margin:20rpx 0rpx;
+  letter-spacing: 5rpx;
+  height: 300rpx;
+}
+.empty{
+  width: 100%;
+  height: 5rpx;
+  background-color: #DDDDDD;
+}
+.casts{
+   display: flex;
+  flex-direction: column;
+  padding:0rpx 30rpx;
+  font-size: 25rpx;
+  color:#7F646A;
+  margin-top:40rpx;
+}
+.start-container{
+  margin: 0rpx 30rpx ;
+  align-items: center;
+}
+scroll-view{
+  margin:30rpx 0rpx;
+  white-space: nowrap;/**必须使用此属性，否则不会出现横向滚动**/
+}
+.casts-container{
+  display: flex;
+}
+.cast{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin-right: 30rpx;
+  font-size: 25rpx;
+  color: #7F646A;
+}
+.cast>image{
+  width: 180rpx;
+  height: 250rpx;
+}

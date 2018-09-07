@@ -1,0 +1,8 @@
+<template name="start-template">
+  <view class='start-container'>
+    <block wx:for="{{startScore}}" wx:for-item="i" wx:key="index">
+      <image src="{{i==1?'/images/icon/star.png':'/images/icon/none-star.png'}}"></image>
+    </block>
+    <text class="start-score">{{score}}分</text>
+  </view>
+</template>

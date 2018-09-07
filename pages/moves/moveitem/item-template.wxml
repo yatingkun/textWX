@@ -1,0 +1,10 @@
+<import src="../starts/start-template" />
+<template name="item-template">
+  <view class="item-container" catchtap='moveDetail' data-moveid="{{moveId}}">
+    <image src='{{imageUrl}}' class='item-image'>
+    </image>
+    <text class='item-title'>{{title}}</text>
+    <template is="start-template" data="{{startScore,score:score}}">
+    </template>
+  </view>
+</template>

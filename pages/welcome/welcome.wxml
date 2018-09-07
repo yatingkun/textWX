@@ -1,0 +1,11 @@
+<view class="container">
+	<view class="user-avatar">
+		<image src="/images/avatar/2.png" class="avatar"></image>
+	</view>
+	<view class="user-name">
+		 <text>你好，琨琨啊</text>
+	</view>
+	<view class="start-container" bindtap='switchPage'>
+		<text class="start">开启小程序之旅</text>
+	</view>
+</view>
