@@ -1,6 +1,14 @@
 /* pages/posts/post.wxss */
+.news-container{
+  border-bottom: solid 1rpx #DBDBDB;
+}
 .visitor{
   display: flex;
+  align-items: center;
+  margin-top:15rpx;
+}
+text{
+  opacity: 0.5;
 }
 .avatar{
   height: 80rpx;
@@ -8,5 +16,33 @@
 }
 .date{
   font-size: 30rpx;
-  vertical-align: middle;
+  margin-left: 15rpx;
+}
+.news-picture{
+  width: 100%;
+  margin: 5rpx 0rpx
+}
+.text>text{
+  font-size: 35rpx;
+   letter-spacing: 5rpx;
+}
+.state-nav{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 20rpx 0rpx;
+}
+.state-nav>text{
+  font-size: 30rpx;
+ 
+}
+.foucs-counter,.viewer-counter{
+  width: 35rpx;
+  height: 35rpx;
+}
+.foucs-counter{
+  margin-right:15rpx;
+}
+.viewer-counter{
+  margin:0rpx 15rpx;
 }

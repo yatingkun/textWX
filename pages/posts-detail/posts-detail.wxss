@@ -61,10 +61,11 @@
 
 .detail {
   margin-top: 20rpx;
-  font-size: 25rpx;
+  font-size: 35rpx;
   font-weight: 200;
   letter-spacing: 2rpx;
   margin-bottom: 20rpx;
+  opacity: 0.5;
 }
 .head{
   position: relative;
