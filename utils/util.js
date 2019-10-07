@@ -24,19 +24,22 @@ function http(url, statu) {
     })
   })
 }
-function connectActors(casts){
-  var castsString="";
-  for(let actor of casts){
-    castsString = castsString+actor.name+"/";
+
+function connectActors(casts) {
+  var castsString = "";
+  for (let actor of casts) {
+    castsString = castsString + actor.name + "/";
   }
-  return(castsString.slice(0, castsString.length-1));
+  return (castsString.slice(0, castsString.length - 1));
 }
+
 function moveDetail(event) {
   wx.navigateTo({
     url: '/pages/moves/movedetail/movedetail?id=' + event.currentTarget.dataset.moveid
   })
 }
-function connectKinds(kinds){
+
+function connectKinds(kinds) {
   var kindString = "";
   for (let kind of kinds) {
     kindString = kindString + kind + "、";
@@ -48,6 +51,6 @@ module.exports = {
   convertToStarsArray: convertToStarsArray,
   http: http,
   connectActors: connectActors,
-  moveDetail:moveDetail,
+  moveDetail: moveDetail,
   connectKinds: connectKinds
 }
